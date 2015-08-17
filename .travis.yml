@@ -6,6 +6,6 @@ cache:
   directories:
   - $HOME/.m2
 
-install: mvn clean install -DskipTests
+install: mvn clean install -DskipTests -Dgpg.skip=true
 
-script: mvn clean test
+script: mvn clean test -Dgpg.skip=true
